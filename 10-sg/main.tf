@@ -274,3 +274,13 @@ resource "aws_security_group_rule" "mongodb_catalogue" {
 }
 
 
+# resource "aws_security_group_rule" "frontend_default" {
+#   type              = "ingress"
+#   from_port         = 0
+#   to_port           = 0
+#   protocol          = "-1"
+#  cidr_blocks = ["0.0.0.0/0"]
+#   security_group_id = module.frontend.sg_id
+# }
+
+
