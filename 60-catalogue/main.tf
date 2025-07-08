@@ -83,6 +83,7 @@ resource "terraform_data" "catalogue_delete" {
 
   provisioner "local-exec" {
     command = "aws ec2 terminate-instances --instance-ids ${aws_instance.catalogue.id}"
+              # aws ec2 terminate-instances --instance-ids <i-xxxxxxxx>
   
    }
   depends_on = [ aws_ami_from_instance.catalogue ]
