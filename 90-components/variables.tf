@@ -7,7 +7,7 @@ variable "components" {
             rule_priority = 20
         }
         cart = {          # this key 
-                           # component = "cart"
+                           
             rule_priority = 30 # this value
         }
         shipping = {
@@ -20,7 +20,7 @@ variable "components" {
             rule_priority = 10
         }
     }
+}
     
     
   
-}
